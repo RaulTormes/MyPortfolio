@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: #0e5044;
+  background: ${({ theme }) => theme.colors.$primary};
   height: 100vh;
 `;

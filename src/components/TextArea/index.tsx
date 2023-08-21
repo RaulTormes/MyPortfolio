@@ -7,7 +7,6 @@ interface TextAreaProps {
 }
 
 export const TextArea = ({ value, onChange }: TextAreaProps) => {
-  console.log(value);
   return (
     <TextAreaComponent
       onChange={(e) => onChange(e.target.value)}

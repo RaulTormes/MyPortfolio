@@ -9,7 +9,6 @@ interface InputProps {
 export const Input = ({ value, onChange }: InputProps) => {
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value);
-    console.log(value);
   };
 
   return (
