@@ -15,6 +15,7 @@ export const SectionComponent = styled.section<SectioncProps>`
   width: 100vw;
   height: ${({ height }) => height || "100vh"};
   padding: 24px 66px;
+  gap: 10px;
   background: ${({ gradient, theme }) =>
     gradient || theme.colors.$gradientDefault};
 `;

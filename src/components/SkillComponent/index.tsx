@@ -10,7 +10,7 @@ import {
 
 interface SkillsProps {
   technology: string;
-  level: number;
+  level: 1 | 2 | 3 | 4 | 5;
 }
 
 export const Skills = ({ technology, level = 1 }: SkillsProps) => {

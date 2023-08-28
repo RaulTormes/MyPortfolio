@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "~/components/Button";
 import { Input } from "~/components/Input";
+import { ProjectCard } from "~/components/ProjectCard";
 import { Section } from "~/components/Section";
 import { Skills } from "~/components/SkillComponent";
 import { TextArea } from "~/components/TextArea";
@@ -45,7 +46,23 @@ export default function App() {
         <Skills technology={"h"} level={3} />
         <Skills technology={"i"} level={3} />
       </Section>
-      <Section>hey</Section>
+      <Section flexDirection="row">
+        <ProjectCard
+          imageSource={"perfil.JPEG"}
+          linkLabel={"linkedin.com/raultormes"}
+          onClick={() => alert("clicou aqui tambem")}
+        />
+        <ProjectCard
+          imageSource={"perfil.JPEG"}
+          linkLabel={"linkedin.com/raultormes"}
+          onClick={() => alert("clicou no segundo")}
+        />
+        <ProjectCard
+          imageSource={"perfil.JPEG"}
+          linkLabel={"linkedin.com/raultormes"}
+          onClick={() => alert("clicou aqui no 3")}
+        />
+      </Section>
     </main>
   );
 }
