@@ -6,8 +6,12 @@ import { Input } from "~/components/Input";
 import { ProjectCard } from "~/components/ProjectCard";
 import { Section } from "~/components/Section";
 import { Skills } from "~/components/SkillComponent";
+import { TechIcon } from "~/components/TechIcon";
 import { TextArea } from "~/components/TextArea";
 import { theme } from "~/styles/defaultTheme";
+
+import screen from "~/assets/screen.png";
+import webDeveloperImage from "~/assets/WebDeveloper.png";
 
 export default function App() {
   //
@@ -48,20 +52,23 @@ export default function App() {
       </Section>
       <Section flexDirection="row">
         <ProjectCard
-          imageSource={"perfil.JPEG"}
+          imageSource={"webDeveloperImage"}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou aqui tambem")}
         />
         <ProjectCard
-          imageSource={"perfil.JPEG"}
+          imageSource={"webDeveloperImage"}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou no segundo")}
         />
         <ProjectCard
-          imageSource={"perfil.JPEG"}
+          imageSource={"screen"}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou aqui no 3")}
-        />
+        />{" "}
+        <TechIcon image={"screen"} />
+        <TechIcon image={webDeveloperImage} />
+        <TechIcon image={screen} />
       </Section>
     </main>
   );
