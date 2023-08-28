@@ -3,11 +3,15 @@ import styled from "styled-components";
 interface SectioncProps {
   height?: string;
   gradient?: string;
+  flexDirection?: string;
+  flexWrap?: string;
 }
 
 export const SectionComponent = styled.section<SectioncProps>`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${({ flexDirection }) =>
+    flexDirection ? flexDirection : "column"};
+  flex-flow: ${({ flexWrap }) => flexWrap};
   width: 100vw;
   height: ${({ height }) => height || "100vh"};
   padding: 24px 66px;

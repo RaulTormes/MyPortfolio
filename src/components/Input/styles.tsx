@@ -10,3 +10,8 @@ export const InputComponent = styled.input`
   border-radius: 5px;
   margin: 5px;
 `;
+export const LabelComponent = styled.label`
+  font-size: medium;
+  color: ${({ theme }) => theme.colors.$white};
+  padding: 2px 10px;
+`;

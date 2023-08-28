@@ -4,7 +4,7 @@ export const ButtonComponent = styled.button`
   width: 15em;
   height: 3em;
   font-size: large;
-  margin: 1em;
+  margin: 17px 5px;
   padding: 10px 10px;
   color: ${({ theme }) => theme.colors.$white};
   background-color: ${({ theme }) => theme.colors.$primary};
