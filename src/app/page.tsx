@@ -10,9 +10,6 @@ import { TechIcon } from "~/components/TechIcon";
 import { TextArea } from "~/components/TextArea";
 import { theme } from "~/styles/defaultTheme";
 
-import screen from "~/assets/screen.png";
-import webDeveloperImage from "~/assets/WebDeveloper.png";
-
 export default function App() {
   //
   const [inputValue, setInputValue] = useState("");
@@ -52,23 +49,23 @@ export default function App() {
       </Section>
       <Section flexDirection="row">
         <ProjectCard
-          imageSource={"webDeveloperImage"}
+          imageSource={require("../assets/screen.png")}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou aqui tambem")}
         />
         <ProjectCard
-          imageSource={"webDeveloperImage"}
+          imageSource={require("../assets/screen.png")}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou no segundo")}
         />
         <ProjectCard
-          imageSource={"screen"}
+          imageSource={require("../assets/screen.png")}
           linkLabel={"linkedin.com/raultormes"}
           onClick={() => alert("clicou aqui no 3")}
-        />{" "}
-        <TechIcon image={"screen"} />
-        <TechIcon image={webDeveloperImage} />
-        <TechIcon image={screen} />
+        />
+        <TechIcon image={require("../assets/screen.png")} />
+        <TechIcon image={require("../assets/screen.png")} />
+        <TechIcon image={require("../assets/screen.png")} />
       </Section>
     </main>
   );

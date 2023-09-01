@@ -1,10 +1,10 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #000000;
   padding: 5px;
   width: 320px;
   height: 200px;
@@ -14,12 +14,15 @@ export const CardContainer = styled.div`
 export const CardComponent = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #aaa;
+  background-color: ${({ theme }) => theme.colors.$white};
   width: 100%;
   height: 100%;
 `;
 
-export const CardImage = styled.img``;
+export const CardImage = styled(Image)`
+  width: 320px;
+  height: 200px;
+`;
 
 export const LinkCard = styled.a`
   display: flex;
