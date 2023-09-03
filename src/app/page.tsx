@@ -8,6 +8,8 @@ import { Section } from "~/components/Section";
 import { Skills } from "~/components/SkillComponent";
 import { TechIcon } from "~/components/TechIcon";
 import { TextArea } from "~/components/TextArea";
+import { Home } from "~/screen/Home";
+import { Projects } from "~/screen/Projects";
 import { theme } from "~/styles/defaultTheme";
 
 export default function App() {
@@ -21,6 +23,8 @@ export default function App() {
   //
   return (
     <main>
+      <Home />
+      <Projects />
       <Section title={"<Projects>"}>
         <Input value={inputValue} onChange={inputChange} label={"Email"} />
         <TextArea

@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionComponent, TitleComponent } from "./styles";
+import { ContentComponent, SectionComponent, TitleComponent } from "./styles";
 
 interface SectionProps {
   title?: string;
@@ -19,14 +19,11 @@ export const Section = ({
   flexWrap,
 }: SectionProps) => {
   return (
-    <SectionComponent
-      height={height}
-      gradient={gradient}
-      flexDirection={flexDirection}
-      flexWrap={flexWrap}
-    >
+    <SectionComponent height={height} gradient={gradient}>
       <TitleComponent>{title}</TitleComponent>
-      {children}
+      <ContentComponent flexDirection={flexDirection} flexWrap={flexWrap}>
+        {children}
+      </ContentComponent>
     </SectionComponent>
   );
 };

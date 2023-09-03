@@ -6,8 +6,8 @@ export const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 5px;
-  width: 320px;
-  height: 200px;
+  width: 277px;
+  height: 197px;
   gap: 15px;
 `;
 
@@ -20,8 +20,8 @@ export const CardComponent = styled.div`
 `;
 
 export const CardImage = styled(Image)`
-  width: 320px;
-  height: 200px;
+  width: 277px;
+  height: 197px;
 `;
 
 export const LinkCard = styled.a`
