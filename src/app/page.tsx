@@ -1,16 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "~/components/Button";
-import { Input } from "~/components/Input";
-import { ProjectCard } from "~/components/ProjectCard";
-import { Section } from "~/components/Section";
-import { Skills } from "~/components/SkillComponent";
-import { TechIcon } from "~/components/TechIcon";
-import { TextArea } from "~/components/TextArea";
+import { About } from "~/screen/About";
+import { Footer } from "~/screen/Footer";
 import { Home } from "~/screen/Home";
 import { Projects } from "~/screen/Projects";
-import { theme } from "~/styles/defaultTheme";
+import { Skills } from "~/screen/Skills";
 
 export default function App() {
   //
@@ -25,7 +20,10 @@ export default function App() {
     <main>
       <Home />
       <Projects />
-      <Section title={"<Projects>"}>
+      <About />
+      <Skills />
+      <Footer />
+      {/* <Section title={"-------------------------"}>
         <Input value={inputValue} onChange={inputChange} label={"Email"} />
         <TextArea
           value={textAreaValue}
@@ -34,23 +32,7 @@ export default function App() {
         />
         <Button label={"Contact me"} onClick={() => alert("clicado")} />
       </Section>
-      <Section
-        height="50vh"
-        title="<about me>"
-        flexDirection="row"
-        flexWrap="wrap"
-        gradient={`${theme.colors.$reverseGradient}`}
-      >
-        <Skills technology={"A"} level={3} />
-        <Skills technology={"B"} level={3} />
-        <Skills technology={"C"} level={4} />
-        <Skills technology={"d"} level={4} />
-        <Skills technology={"e"} level={2} />
-        <Skills technology={"f"} level={3} />
-        <Skills technology={"g"} level={3} />
-        <Skills technology={"h"} level={3} />
-        <Skills technology={"i"} level={3} />
-      </Section>
+      <Section></Section>
       <Section flexDirection="row">
         <ProjectCard
           imageSource={require("../assets/screen.png")}
@@ -70,7 +52,7 @@ export default function App() {
         <TechIcon image={require("../assets/screen.png")} />
         <TechIcon image={require("../assets/screen.png")} />
         <TechIcon image={require("../assets/screen.png")} />
-      </Section>
+      </Section> */}
     </main>
   );
 }

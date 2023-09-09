@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: "flex";
   flex-direction: "column";
-  width: 30vw;
+  width: 30%;
 `;
 
 export const TitleSkill = styled.label`
@@ -25,13 +25,13 @@ export const LevelContainer = styled.div`
 `;
 
 export const LevelIndicator = styled.div<{ level: number }>`
-  width: ${({ level }) => 20 * level}%;
+  width: ${({ level }) => 10 * level}%;
   height: 100%;
   position: absolute;
   background-color: ${({ theme }) => theme.colors.$primary};
 `;
 
 export const Level = styled.p`
-  padding-left: 10px;
+  padding-left: 8px;
   color: ${({ theme }) => theme.colors.$white};
 `;

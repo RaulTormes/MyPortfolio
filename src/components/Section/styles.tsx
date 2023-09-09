@@ -16,18 +16,17 @@ export const SectionComponent = styled.section<SectioncProps>`
   width: 100vw;
   height: ${({ height }) => height || "100vh"};
   padding: 24px 66px;
-  gap: 10px;
   background: ${({ gradient, theme }) =>
     gradient || theme.colors.$gradientDefault};
 `;
 export const TitleComponent = styled.h1`
-  font-size: large;
   color: ${({ theme }) => theme.colors.$white};
 `;
 
 export const ContentComponent = styled.div<ContentProps>`
   flex: 1;
   display: flex;
+  justify-content: space-around;
   width: 100%;
   flex-direction: ${({ flexDirection }) =>
     flexDirection ? flexDirection : "column"};

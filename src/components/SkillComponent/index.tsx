@@ -8,12 +8,12 @@ import {
   TitleSkill,
 } from "./styles";
 
-interface SkillsProps {
+interface SkillProps {
   technology: string;
-  level: 1 | 2 | 3 | 4 | 5;
+  level: number;
 }
 
-export const Skills = ({ technology, level = 1 }: SkillsProps) => {
+export const Skill = ({ technology, level = 1 }: SkillProps) => {
   return (
     <Container>
       <TitleSkill>{technology}</TitleSkill>

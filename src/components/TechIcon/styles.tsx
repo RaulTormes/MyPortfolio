@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 export const ImageContainer = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.colors.$white};
   height: 70px;
   width: 70px;
 `;
 
-export const TechImage = styled(Image)`
+export const TechImage = styled(Image).attrs(() => ({
+  width: 70,
+  height: 70,
+}))`
   height: 70px;
   width: 70px;
+  border-radius: 10px;
 `;
