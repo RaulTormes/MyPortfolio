@@ -1,12 +1,13 @@
-import styled, { css } from "styled-components";
-
 const theme = {
-  borderRadius: "5px",
-
   colors: {
-    black: "#000000",
-    white: "#ffffff",
-    fisrtGrad: `conic-gradient( from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #0071ff33 160deg,transparent 360deg)`,
+    $primary: "#59905E",
+
+    $secondary: "#0E5044",
+    $terciary: "#0E232F",
+    $gradientDefault: "linear-gradient(to bottom, #0E232F,#0E232F,#0E5044)",
+    $reverseGradient: "linear-gradient(to bottom, #0E5044,#0E232F,#0E232F)",
+    $white: "#ffffff",
+    $hover: "#436d47",
   },
 };
 

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "image": "/imgs/screen.png",
+    "content": {
+      "description": "Project one",
+      "technologies": [
+        "/imgs/technologies/html-5.png",
+        "/imgs/technologies/css-3.png",
+        "/imgs/technologies/js.png",
+        "/imgs/technologies/react.svg"
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "image": "/imgs/screen2.png",
+    "content": {
+      "description": "Project two",
+      "technologies": ["/imgs/screen2.png", "/imgs/technologies/css-3.png"]
+    }
+  },
+  {
+    "id": "3",
+    "image": "/imgs/download.png",
+    "content": {
+      "description": "Project three",
+      "technologies": ["/imgs/screen2.png", "/imgs/technologies/css.png"]
+    }
+  },
+  {
+    "id": "4",
+    "image": "/imgs/perfil.jpeg",
+    "content": {
+      "description": "Project four",
+      "technologies": ["/imgs/screen2.png", "/imgs/technologies/css.png"]
+    }
+  },
+  {
+    "id": "5",
+    "image": "/imgs/apple.jpg",
+    "content": {
+      "description": "Project five",
+      "technologies": ["/imgs/screen2.png", "/imgs/technologies/css.png"]
+    }
+  }
+]

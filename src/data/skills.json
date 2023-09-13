@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "technology": "HTML",
+      "level": 7
+    },
+    {
+      "technology": "CSS",
+      "level": 7
+    },
+    {
+      "technology": "JavaScript",
+      "level": 5
+    },
+    {
+      "technology": "Typescript",
+      "level": 5
+    },
+    {
+      "technology": "Python",
+      "level": 2
+    },
+    {
+      "technology": "Styled-Component",
+      "level": 5
+    },
+    {
+      "technology": "React",
+      "level": 6
+    }
+  ]
+}
